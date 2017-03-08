@@ -35,6 +35,13 @@ public class ReservationSystem {
         Reservation R1=new Reservation(1);
         Table tab1=new Table();
         
+        String chef[]={"Ali","Saad","Bilal","Asad"};
+        String server[]={"Khan","Alli","Dawn","John","Fam","Mike"};
+        String manager[]={"Lad"};
+        String support[]={"Amin"};
+        
+        Staff S1=new Staff(chef,server,manager,support);
+        
         Rs.booking(R1,tab1);
         System.out.println("*************Customer Reservation Details**************");       //Print all the details related to the reservation
         R1.get_reservation();
