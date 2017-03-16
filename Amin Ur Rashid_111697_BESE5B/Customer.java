@@ -1,12 +1,12 @@
-package lab3;
+package lab4;
 
 public class Customer {
     String Fname;
     String Lname;
-    String Phone_no;
+    int Phone_no;
     String email;
     //Parameterized Constructor
-    public Customer(String Fn,String Ln,String Pno,String em){            
+    public Customer(String Fn,String Ln,int Pno,String em){            
         this.Fname=Fn;
         this.Lname=Ln;
         this.Phone_no=Pno;

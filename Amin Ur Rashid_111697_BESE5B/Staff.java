@@ -1,4 +1,4 @@
-package lab3;
+package lab4;
 
 public class Staff {
     String[] chef=new String[4];

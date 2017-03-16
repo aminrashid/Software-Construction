@@ -1,4 +1,4 @@
-package lab3;
+package lab4;
 
 public class Reservation {
     int Reserve_id;                              //Reservation ID

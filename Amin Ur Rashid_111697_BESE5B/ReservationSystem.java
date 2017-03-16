@@ -1,6 +1,12 @@
-package lab3;
+package lab4;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class ReservationSystem {
     public void booking(Reservation R1,Table tab1){
         Scanner scanner = new Scanner(System.in);
@@ -30,8 +36,15 @@ public class ReservationSystem {
     }
    
     public static void main(String[] args){
+        
+        try {
+            Connection conn=DriverManager.getConnection("jdbc:derby://localhost:1527/RMSDB","amin","amin");
+        } catch (SQLException ex) {
+            Logger.getLogger(ReservationSystem.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         ReservationSystem Rs=new ReservationSystem();
-        Customer cust=new Customer("Amin","Rashid","03002345765","arashid@gmail.com");
+        Customer cust=new Customer("Amin","Rashid",03002345765,"arashid@gmail.com");
         Reservation R1=new Reservation(1);
         Table tab1=new Table();
         

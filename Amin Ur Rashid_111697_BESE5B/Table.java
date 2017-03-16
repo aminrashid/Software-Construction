@@ -1,4 +1,4 @@
-package lab3;
+package lab4;
 
 public class Table {
     int capacity;                                                       //Amount of people per table
